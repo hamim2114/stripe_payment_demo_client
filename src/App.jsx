@@ -32,7 +32,7 @@ function App() {
   const payNow = async token => {
     try {
       const response = await axios({
-        url: 'https://stripe-payment-demo-server-c9ligynhx-hamim2114.vercel.app//payment',
+        url: 'https://stripe-payment-demo-server.vercel.app/payment',
         method: 'post',
         data: {
           amount: product.price * 100,
